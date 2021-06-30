@@ -26,15 +26,15 @@ FILENAME_PROMPT_ERROR = """
 No ha sido posible procesar correctamente el nombre del fichero. Por favor, inténtelo de nuevo.
 """
 
-PWD_PROMPT_EXPLANATION = """
+INPUT_PROMPT_EXPLANATION = """
 Crea tu clave de encriptación para proteger las columnas sensibles. Esta clave no se guardará, así que debes
 custiodarla en un gestor externo de contraseñas seguro sin hacer ningún tipo de anotación que pueda inducir a su
 vinculación con este set de datos. Si pierdes esta clave, no podrás desencriptar los datos!
 """
 
-PWD_PROMPT = "Clave de encriptación"
+INPUT_PROMPT = "Clave de encriptación"
 
-PWD_PROMPT_ERROR = """
+INPUT_PROMPT_ERROR = """
 No ha sido posible realizar la creación de la clave. Por favor, inténtelo de nuevo.
 """
 
