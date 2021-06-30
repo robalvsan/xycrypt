@@ -1,0 +1,7 @@
+.idea
+.git
+.gitignore
+tests
+.pre-commit-config.yaml
+pytest.ini
+datos
