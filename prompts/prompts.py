@@ -10,9 +10,9 @@ from constants import DEFAULT_FILEPATH
 from constants import FILENAME_PROMPT
 from constants import FILENAME_PROMPT_ERROR
 from constants import FILENAME_PROMPT_EXPLANATION
-from constants import PWD_PROMPT
-from constants import PWD_PROMPT_ERROR
-from constants import PWD_PROMPT_EXPLANATION
+from constants import INPUT_PROMPT
+from constants import INPUT_PROMPT_ERROR
+from constants import INPUT_PROMPT_EXPLANATION
 from constants import SALT_PROMPT
 from constants import SENSITIVE_COLUMNS_PROMPT
 from constants import SENSITIVE_COLUMNS_PROMPT_ERROR
@@ -25,12 +25,12 @@ def ask_for_symmetric_key(action):
     while valid_prompt_result is False:
         try:
             if action == "E":
-                prompt_explanation = textwrap.dedent(PWD_PROMPT_EXPLANATION).strip()
+                prompt_explanation = textwrap.dedent(INPUT_PROMPT_EXPLANATION).strip()
                 print(f"\n{prompt_explanation}")
-            __symmetric_key = getpass.getpass(prompt=f"\n{PWD_PROMPT}: ")
+            __symmetric_key = getpass.getpass(prompt=f"\n{INPUT_PROMPT}: ")
             valid_prompt_result = True
         except Exception:
-            print(textwrap.dedent(PWD_PROMPT_ERROR).strip())
+            print(textwrap.dedent(INPUT_PROMPT_ERROR).strip())
     return __symmetric_key
 
 
